@@ -19,7 +19,7 @@
 
 <div class="select-none">
 	<div
-		class="z-40 transition-opacity duration-500 fixed top-0 left-0 h-1/2 md:h-full w-full md:w-1/2 hover:opacity-80 opacity-90 bg-neutral-800"
+		class="z-40 transition-opacity duration-500 fixed top-0 left-0 h-1/2 md:h-full w-full md:w-1/2 hover:opacity-80 opacity-90 bg-neutral-900"
 		on:click={() => {
 			if (quoteVisible) {
 				person == "kanye" ? (win = true) : (win = false);
@@ -35,7 +35,7 @@
 		on:keypress
 	/>
 	<div
-		class="z-40 transition-opacity duration-500 fixed top-1/2 md:top-0 left-0 md:right-0 md:left-auto h-1/2 md:h-full w-full md:w-1/2 hover:opacity-80 opacity-90 bg-neutral-800"
+		class="z-40 transition-opacity duration-500 fixed top-1/2 md:top-0 left-0 md:right-0 md:left-auto h-1/2 md:h-full w-full md:w-1/2 hover:opacity-80 opacity-90 bg-neutral-900"
 		on:mouseover={() => {
 			selected = "Hitler";
 		}}
@@ -50,7 +50,7 @@
 		}}
 		on:keypress
 	/>
-	<div class="z-30 fixed top-0 left-0 w-full h-full flex flex-col md:flex-row blur-sm">
+	<div class="z-30 fixed top-0 left-0 w-full h-full flex flex-col md:flex-row">
 		<div class="h-1/2 md:h-full w-full">
 			<img class="h-full w-full object-cover" src="/kanye.webp" alt="kanye" />
 		</div>
@@ -64,20 +64,23 @@
 		{#if win != undefined}
 			<div
 				class="text-3xl md:text-5xl drop-shadow-md w-full h-full fixed left-0 top-0 flex flex-col items-center justify-center"
-				transition:scale
+				in:scale={{ duration: 300, delay: 100 }}
+				out:scale={{ duration: 500 }}
 			>
 				{#if win}
 					<div class="text-emerald-200">Correct!</div>
 				{:else}
 					<div class="text-orange-200">Wrong!</div>
 				{/if}
-				<div class="font-normal text-2xl capitalize">It was {person}</div>
+				<div class="font-normal text-2xl capitalize">
+					It was {person}
+				</div>
 			</div>
 		{/if}
 		{#if quoteVisible}
 			<div
-				class="text-3xl md:text-5xl drop-shadow-md w-full max-w-screen-lg px-8 md:px-16"
-				in:fly={{ y: 200, duration: 500 }}
+				class="text-3xl md:text-5xl drop-shadow-md w-full max-w-screen-md px-8 md:px-16"
+				in:fly={{ y: 150, duration: 350, delay: 50 }}
 				out:scale
 			>
 				<div class="w-full text-xl">Who said it: Kanye or Hitler?</div>
@@ -91,16 +94,16 @@
 						{#if selected == "Kanye"}
 							<div
 								class="w-0 font-bold"
-								in:fly={{ y: 50, duration: 250 }}
-								out:fly={{ y: -50, duration: 250 }}
+								in:fly={{ y: 40, duration: 250 }}
+								out:fly={{ y: -40, duration: 250 }}
 							>
 								Kanye
 							</div>
 						{:else if selected == "Hitler"}
 							<div
 								class="w-0 font-bold"
-								in:fly={{ y: 50, duration: 250 }}
-								out:fly={{ y: -50, duration: 250 }}
+								in:fly={{ y: 40, duration: 250 }}
+								out:fly={{ y: -40, duration: 250 }}
 							>
 								Hitler
 							</div>
