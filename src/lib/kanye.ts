@@ -1,9 +1,8 @@
-export default [
+const kanye = [
 	"2024",
 	"All you have to be is yourself",
 	"Believe in your flyness...conquer your shyness.",
 	"Burn that excel spread sheet",
-	"Decentralize",
 	"Distraction is the enemy of vision",
 	"Everything you do in life stems from either fear or love",
 	"For me giving up is way harder than trying.",
@@ -11,7 +10,7 @@ export default [
 	"Fur pillows are hard to actually sleep on",
 	"George Bush doesn't care about black people",
 	"Have you ever thought you were in love with someone but then realized you were just staring in a mirror for 20 minutes?",
-	"I care. I care about everything. Sometimes not giving a f#%k is caring the most.",
+	"I care. I care about everything. Sometimes not giving a fuck is caring the most.",
 	"I feel calm but energized",
 	"I feel like I'm too busy writing history to read it.",
 	"I feel like me and Taylor might still have sex",
@@ -36,7 +35,7 @@ export default [
 	"Keep squares out yo circle",
 	"Keep your nose out the sky, keep your heart to god, and keep your face to the rising sun.",
 	"Let's be like water",
-	"Man... whatever happened to my antique fish tank?",
+	"Whatever happened to my antique fish tank?",
 	"My dad got me a drone for Christmas",
 	"My greatest award is what I'm about to do.",
 	"My greatest pain in life is that I will never be able to see myself perform live.",
@@ -119,6 +118,30 @@ export default [
 	"For me to say I wasn't a genius I'd just be lying to you and to myself",
 	"I've known my mom since I was zero years old. She is quite dope.",
 	"I don't expect to be understood at all.",
-	"I'm on the pursuit of awesomeness, excellence is the bare minimum.",
-	"You basically can say anything to someone on an email or text as long as you put LOL at the end."
+	"I'm on the pursuit of awesomeness, excellence is the bare minimum."
 ];
+
+const kanyeAmbiguous = [
+	"You basically can say anything to someone on an email or text as long as you put LOL at the end.",
+	"I prefer my kids knew Hannukah from Kwanzaa. At least it will come with some financial engineering.",
+	"I just think that's what they're about, is making money,” West said in an apparent reference to Jared Kushner and his Jewish family.",
+	"Planned Parenthood was made by Margaret Sanger, a known eugenics, with the KKK to control the Jew population.",
+	"When I say Jew, I mean the 12 lost tribes of Judah, the blood of Christ, who the people known as the race Black really are. This is who our people are.",
+	"I will use you as an example to show the Jewish people that told you to call me that no one can threaten or influence me.",
+	"I told you this is war. Now gone get you some business.",
+	"I'm a bit sleepy tonight but when I wake up I'm going death con 3 On JEWISH PEOPLE.",
+	"I actually can't be Anti Semitic because black people are actually Jew",
+	"You guys have toyed with me and tried to black ball anyone whoever opposes your agenda.",
+	"The world is our family",
+	"Speak God's truth to power",
+	"We will be recognized",
+	"We will cure hunger",
+	"Winning is the only option",
+	"I don't expect to be understood at all."
+];
+
+// do it twice to increase the odds of getting a kanye quote without the 21st century spice.
+kanye.push(...kanyeAmbiguous);
+kanye.push(...kanyeAmbiguous);
+
+export default kanye;
