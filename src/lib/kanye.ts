@@ -124,7 +124,7 @@ const kanye = [
 const kanyeAmbiguous = [
 	"You basically can say anything to someone on an email or text as long as you put LOL at the end.",
 	"I prefer my kids knew Hannukah from Kwanzaa. At least it will come with some financial engineering.",
-	"I just think that's what they're about, is making money,” West said in an apparent reference to Jared Kushner and his Jewish family.",
+	"I just think that's what they're about, is making money.",
 	"Planned Parenthood was made by Margaret Sanger, a known eugenics, with the KKK to control the Jew population.",
 	"When I say Jew, I mean the 12 lost tribes of Judah, the blood of Christ, who the people known as the race Black really are. This is who our people are.",
 	"I will use you as an example to show the Jewish people that told you to call me that no one can threaten or influence me.",
