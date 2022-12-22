@@ -52,10 +52,10 @@
 	/>
 	<div class="z-30 fixed top-0 left-0 w-full h-full flex flex-col md:flex-row">
 		<div class="h-1/2 md:h-full w-full">
-			<img class="h-full w-full object-cover" src="/kanye.webp" alt="kanye" />
+			<img class="h-full w-full object-cover" src="/kanye.webp" alt="Kanye West" />
 		</div>
 		<div class="h-1/2 md:h-full w-full">
-			<img class="h-full w-full object-cover" src="/hitler.webp" alt="kanye" />
+			<img class="h-full w-full object-cover" src="/hitler.webp" alt="Adolf Hitler" />
 		</div>
 	</div>
 	<div
